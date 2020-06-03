@@ -2,10 +2,53 @@
 
 <!DOCTYPE html>
 
+<html>
+
 <head>
 	<meta charset="UTF-8"/>
 	<title>BallSports</title>
 	<link rel="stylesheet" type="text/css" href="estilo.css">
+
+	<script>
+		function validarForm1(){
+			var nome = document.forms["form"]["txtNome"].value;
+			if (nome == ""){
+				alert("O campo nome está vazio!");
+				return false;
+			}
+			var idade = document.forms["form"]["txtIdade"].value;
+			if (idade == ""){
+				alert("O campo idade está vazio!");
+				return false;
+			}
+			var endereco = document.forms["form"]["txtEndereco"].value;
+			if (endereco == ""){
+				alert("O campo endereço está vazio!");
+				return false;
+			}
+			var cpf = document.forms["form"]["txtCPF"].value;
+			if (cpf == ""){
+				alert("O campo CPF está vazio!");
+				return false;
+			}
+		}
+	</script>
+	
+	<script>
+		function validarForm2(){
+			var marca = document.forms["form2"]["txtMarca"].value;
+			if (marca == ""){
+				alert("O campo marca está vazio!");
+				return false;
+			}
+			var cor = document.forms["form2"]["txtCor"].value;
+			if (cor == ""){
+				alert("O campo cor está vazio!");
+				return false;
+			}
+		}
+
+	</script>
 </head>
 
 <body>
@@ -15,7 +58,7 @@
 	<br>
 
 	<div id="divForm">
-		<form method="GET" an action="" onsubmit="" enctype="multipart/form-data">
+		<form name="form" method="GET" an action="" onsubmit="return validarForm1()" enctype="multipart/form-data">
 			<fieldset>
 			<legend><h3> <center>Dados Pessoais</center> </h3></legend>
 			<label><center>Nome:</center></label>
@@ -31,7 +74,9 @@
 			<center> <input type="submit" value="Salvar"/> </center>
 			<center> <input type="reset" value="Limpar"/> </center>
 			<br>
+		</form>
 
+		<form name="form2" method="GET" an action="" onsubmit="return validarForm2()" enctype="multipart/form-data">
 			<fieldset>
 			<legend><h3> <center>Dados do produto</center> </h3></legend>
 			<label><center>Categoria:</center></label>
