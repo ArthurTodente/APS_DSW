@@ -2,8 +2,6 @@
 
 <!DOCTYPE html>
 
-<html>
-
 <head>
 	<meta charset="UTF-8"/>
 	<title>BallSports</title>
@@ -14,20 +12,28 @@
 	<br>
 	<h1> <center>Bem-vindo à Ball Sports!</center> </h1>
 	<h3> <center>O maior centro de vendas de artigos esportivos do Brasil.</center> </h3>
+	<br>
 
 	<div id="divForm">
 		<form method="GET" an action="" onsubmit="" enctype="multipart/form-data">
-			<br>
-			<h3> <center>Informe abaixo, os seus dados de cadastro.</center> </h3>
+			<fieldset>
+			<legend><h3> <center>Dados Pessoais</center> </h3></legend>
 			<label><center>Nome:</center></label>
-			<center> <input type="text" name="txtNome" id="txtNome"/></center> <br> <br>
+			<center> <input type="text" name="txtNome" id="txtNome" placeholder="Digite aqui o seu nome"/></center> <br>
 			<label><center>Idade:</center></label>
-			<center> <input type="text" name="txtIdade" id="txtIdade"/></center> <br> <br>
+			<center> <input type="text" name="txtIdade" id="txtIdade" placeholder="Digite aqui a sua idade"/></center> <br>
 			<label><center>Endereço:</center></label>
-			<center> <input type="text" name="txtEndereco" id="txtEndereco"/></center> <br> <br>
+			<center> <input type="text" name="txtEndereco" id="txtEndereco" placeholder="Digite aqui o seu endereço"/></center> <br>
 			<label><center>CPF:</center></label>
-			<center> <input type="text" name="txtCPF" id="txtCPF"/></center> <br> <br>
-			<h3> <center>Informe abaixo, os dados do produto que você deseja comprar.</center> </h3>
+			<center> <input type="text" name="txtCPF" id="txtCPF" placeholder="Digite aqui o seu CPF"/></center>  <br>
+			</fieldset>
+			<br>
+			<center> <input type="submit" value="Salvar"/> </center>
+			<center> <input type="reset" value="Limpar"/> </center>
+			<br>
+
+			<fieldset>
+			<legend><h3> <center>Dados do produto</center> </h3></legend>
 			<label><center>Categoria:</center></label>
 			<center> <select name="Categoria">
 					 	<option value="categ1" selected>Selecione...</option>
@@ -38,9 +44,15 @@
 					 	<option value="categ56">Equipamentos</option>
 					 </select></center><br>
 			<label><center>Marca:</center></label>
-			<center> <input type="text" name="txtMarca" id="txtMarca"/></center> <br> <br>
+			<center> <input type="text" name="txtMarca" id="txtMarca" placeholder="Digite aqui a marca"/></center> <br>
 			<label><center>Cor:</center></label>
-			<center> <input type="text" name="txtCor" id="txtCor"/></center> <br> <br>
+			<center> <input type="text" name="txtCor" id="txtCor" placeholder="Digite aqui a cor"/></center> <br>
+			</fieldset>
+			<br>
+			<center> <input type="submit" value="Salvar"/> </center>
+			<center> <input type="reset" value="Limpar"/> </center>
+			
+		</form>
 	</div>
 </body>
 
